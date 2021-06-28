@@ -1,0 +1,15 @@
+{
+  "name": "com.taecg.ShaderReference",
+  "version": "1.0.0",
+  "displayName": "Shader参考大全",
+  "description": "方便好用的Shader参考工具",
+  "unity": "2018.3",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "author": {
+    "name": "taecg",
+    "email": "taecg@qq.com"
+  }
+}
