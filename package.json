@@ -1,12 +1,17 @@
 {
   "name": "com.taecg.shaderreference",
   "version": "1.0.1",
-  "displayName": "ShaderReference",
-  "description": "编写Shaderlab语法参考的工具(支持BuiltIn和URP),打开方式：1.Window/Shader参考大全. 2.快捷键:Shfit+R",
+  "displayName": "Shader Reference",
+  "description": "编写Shaderlab语法参考的工具(支持BuiltIn和URP),打开方式：1>>Window/Shader参考大全. 2>>快捷键:Shfit+R",
   "unity": "2018.3",
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
+  "keywords": [
+    "shader",
+    "参考大全",
+    "taecg"
+  ],
   "author": {
     "name": "taecg",
     "email": "taecg@qq.com"
