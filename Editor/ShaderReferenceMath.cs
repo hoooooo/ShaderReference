@@ -2,7 +2,7 @@
  * @file         ShaderReferenceMath.cs
  * @author       Hongwei Li(taecg@qq.com)
  * @created      2018-11-16
- * @updated      2021-04-23
+ * @updated      2021-06-29
  *
  * @brief        数学运算相关
  */
@@ -136,12 +136,12 @@ namespace taecg.tools.shaderReference
             "   float3 t = eta*i + ((eta*cosi - sqrt(abs(cost2))) * n);\n" +
             "   return t * (float3)(cost2 > 0);\n" +
             "}");
-            ShaderReferenceUtil.DrawOneContent("round (x)", "返回x四舍五入的值");
-            ShaderReferenceUtil.DrawOneContent("rsqrt (x)", "返回x的平方根倒数,注意x不能为0.相当于 pow(x, -0.5)");
+            ShaderReferenceUtil.DrawOneContent("round(x)", "返回x四舍五入的值");
+            ShaderReferenceUtil.DrawOneContent("rsqrt(x)", "返回x的平方根倒数,注意x不能为0.相当于 pow(x, -0.5)");
             ShaderReferenceUtil.DrawOneContent("saturate (x)", "如果x<0返回0,如果x>1返回1,否则返回x.");
-            ShaderReferenceUtil.DrawOneContent("sqrt (x)", "返回x的平方根.");
-            ShaderReferenceUtil.DrawOneContent("step (a,b)", "如果a<=b返回1,否则返回0.");
-            ShaderReferenceUtil.DrawOneContent("sign (x)", "如果x=0返回0,如果x>0返回1,如果x<0返回-1.");
+            ShaderReferenceUtil.DrawOneContent("sqrt(x)", "返回x的平方根.");
+            ShaderReferenceUtil.DrawOneContent("step(a,b)", "如果a<=b返回1,否则返回0.");
+            ShaderReferenceUtil.DrawOneContent("sign(x)", "如果x=0返回0,如果x>0返回1,如果x<0返回-1.");
             ShaderReferenceUtil.DrawOneContent("sin(x)", "返回弧度x的正弦值,范围在[-1,1]之间.\n");
             ShaderReferenceUtil.DrawOneContent("sincos(x,a,b)", "同时返回弧度x的正弦值a与余弦值b.\n");
             ShaderReferenceUtil.DrawOneContent("smoothstep (min,max,x)", "float smoothstep (float min, float max, float x)\n" +
@@ -150,6 +150,7 @@ namespace taecg.tools.shaderReference
                 "\treturn t * t * (3.0 - (2.0 * t));\n" +
                 "}\n" +
                 "如果 x 比min 小，返回 0\n如果 x 比max 大，返回 1\n如果 x 处于范围 [min，max]中，则返回 0 和 1 之间的值(按值在min和max间的比例).\n如果只想要线性过渡，并不需要平滑的话，可以直接使用saturate((x - min)/(max - min))");
+            ShaderReferenceUtil.DrawOneContent("tan(x)", "返回x的正切值");
             ShaderReferenceUtil.DrawOneContent("transpose (M)", "求矩阵M的转置.");
 
             ShaderReferenceUtil.DrawTitle("普通纹理采样");
